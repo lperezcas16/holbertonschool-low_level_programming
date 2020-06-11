@@ -1,4 +1,5 @@
-#include <stdio-h>
+#include <stdio.h>
+
 /**
 *main - Entry
 *
@@ -8,9 +9,9 @@
 int main(void)
 {
 	char letra;
-	for (letra = "a"; letra <= 'z'; letra++)
+	for (letra = 'a' ; letra <= 'z' ; letra++)
 	{
-		if (letra == 'q' || i == 'e')
+		if (letra == 'q' || letra == 'e')
 		{
 			letra++;
 		}
