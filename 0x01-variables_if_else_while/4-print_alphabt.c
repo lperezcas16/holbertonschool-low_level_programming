@@ -1,21 +1,19 @@
 #include <stdio.h>
-
 /**
-*main - Entry
-*
+*main- Entry
 *
 *Return: Always 0
 */
 int main(void)
 {
-	char letra;
-	for (letra = 'a' ; letra <= 'z' ; letra++)
+	char l;
+	for (l = 'a' ; l <= 'z' ; l++)
 	{
-		if (letra == 'q' || letra == 'e')
+		if (l == 'q' || l == 'e')
 		{
-			letra++;
+			l++;
 		}
-	putchar (letra);
+		putchar (l);
 	}
 	putchar ('\n');
 	return (0);
