@@ -1,14 +1,18 @@
 #include <stdio.h>
+
 /**
 *main- Entry
 *
 *Return: Always 0
 */
+
 int main(void)
 {
-	char l;
-	for (l = 'a' ; l <= 'z' ; l++)
+	int l;
+
+	for (l = 'a'; l <= 'z'; l++)
 	{
+
 		if (l == 'q' || l == 'e')
 		{
 			l++;
