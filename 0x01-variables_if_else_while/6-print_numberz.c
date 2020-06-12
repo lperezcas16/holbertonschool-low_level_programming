@@ -1,17 +1,18 @@
 #include <stdio.h>
 
 /**
-*main - Entry
-*
-*Return: Always 0
-*/
-
+ * main - Entry
+ *
+ * Return: Always 0
+ */
 int main(void)
 {
-	int num = 0;
+	int n = '0';
 
-	do {
-		printf("%d", num++);
-		} while (num <= 9);
+	while (n <= '9')
+	{
+		putchar(n++);
+	}
+	putchar('\n');
 	return (0);
 }
