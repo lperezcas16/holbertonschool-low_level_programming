@@ -1,31 +1,20 @@
 #include "holberton.h"
 
 /**
- * _abs - returns absolute value of parameter
+ * print_last_digit - Determine last digit of number
+ * @k: The number
  *
- * @n: int to turn to absolute value
- * Return: returns absolute value
- */
-int _abs(int n)
-{
-	if (n <= 0)
-		return (n - (n * 2));
-	else
-		return (n);
-}
-
-/**
- * print_last_digit - prints the last digit of inputted number
+ * Description: Determine the last digit of a number
  *
- * @n: int to pull last digit from
- * Return: Returns last digit
+ * Return: The last digit of k
  */
-int print_last_digit(int n)
+int print_last_digit(int k)
 {
-	int last;
+	int m;
 
-	last = _abs(n);
-	last %= 10;
-	_putchar(last + '0');
-	return (last);
+	m = k % 10;
+	if (m < 0)
+		m = m * -1;
+	_putchar(m + 48);
+	return (m);
 }
