@@ -1,4 +1,4 @@
-#include "holberton.h" 
+#include "holberton.h"
 
 /**
 *add - Two variables
@@ -9,9 +9,8 @@
 *
 */
 
-int add (int A, int B)
+int add(int A, int B)
 {
 	A += B;
-	
 	return (A);
 }
