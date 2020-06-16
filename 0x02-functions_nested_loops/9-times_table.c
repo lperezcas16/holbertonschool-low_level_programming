@@ -1,56 +1,37 @@
 #include "holberton.h"
 
 /**
- * times_table - prints times table up to 9
+ * times_table - create a table of multiplication facts
  *
- * Return: Always 0.
+ * Return: print to stdout the 9 times table, starting with 0.
  */
 void times_table(void)
 {
-	int i, j;
+	int x;
+	int y;
 
-	i = 0;
-	while (i < 10)
+	for (x = 0; x <= 9; x++)
 	{
+		y = 0;
 		_putchar('0');
-		j = 1;
-		while (j < 10)
+		for (y = 1; y <= 9; y++)
 		{
-			putformatnumber(i * j++);
+			if ((x * y) <= 9)
+			{
+				_putchar(',');
+				_putchar(' ');
+				_putchar(' ');
+				_putchar(x * y + '0');
+			}
+			else
+			{
+				_putchar(',');
+				_putchar(' ');
+				_putchar(x * y / 10 + '0');
+				_putchar(x * y % 10 + '0');
+			}
+
 		}
 		_putchar('\n');
-		i++;
-	}
-}
-
-/**
- * putformatnumber - check the code for Holberton School students.
- *
- * @n: number to print formatted
- * Return: Always 0.
- */
-void putformatnumber(int n)
-{
-	if (n < 10)
-	{
-		_putchar(',');
-		_putchar(' ');
-		_putchar(' ');
-		_putchar(n + '0');
-	}
-	else if (n >= 10 && n < 100)
-	{
-		_putchar(',');
-		_putchar(' ');
-		_putchar(n / 10 + '0');
-		_putchar(n % 10 + '0');
-	}
-	else
-	{
-		_putchar(',');
-		_putchar(' ');
-		_putchar(n / 100 + '0');
-		_putchar(n / 10 % 10 + '0');
-		_putchar(n % 10 + '0');
 	}
 }
