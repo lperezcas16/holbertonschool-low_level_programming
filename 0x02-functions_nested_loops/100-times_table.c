@@ -1,43 +1,49 @@
 #include "holberton.h"
+
 /**
- * print_times_table - times table to 9
- * @n: - argument for the function
- * Description - times tables to 9
- * return: void
+ * print_times_table - Print the n times table
+ * @n: The times table to print
  */
 void print_times_table(int n)
 {
-	int i, j, k;
+	int i;
+	int j;
 
-	if (n > 0 && n < 15)
+	if ((n > 15) || (n < 0))
+		return;
+
+	for (i = 0; i <= n; i++)
 	{
 		for (j = 0; j <= n; j++)
 		{
-			_putchar('0');
-			for (i = 1; i <= n; i++)
+			if ((i * j) < 10)
 			{
-				k = i * j;
-				if (k > 9 && k <= 99)
+				if (j != 0)
 				{
-				_putchar(','); _putchar(' '); _putchar(' ');
-				_putchar(k / 10 + '0');
-				_putchar(k % 10 + '0');
-				}
-				else if (k < 10)
-				{
-				_putchar(','); _putchar(' '); _putchar(' ');
-				_putchar(' ');
-				_putchar(k + '0');
-				}
-				else
-				{
-				_putchar(','); _putchar(' ');
-				_putchar(k / 100 + '0');
-				_putchar(k / 10 % 10 + '0');
-				_putchar(k % 10 + '0');
+					_putchar(' ');
+					_putchar(' ');
 				}
 			}
-			_putchar('\n');
+			else if ((i * j) < 100)
+			{
+				_putchar(' ');
+				_putchar(i * j / 10 + '0');
+			}
+			else
+			{
+				_putchar(i * j / 100 + '0');
+				_putchar((i * j / 10) % 10 + '0');
+			}
+			_putchar(i * j % 10 + '0');
+			if (j == n)
+			{
+				_putchar('\n');
+			}
+			else
+			{
+				_putchar(',');
+				_putchar(' ');
+			}
 		}
 	}
 }
