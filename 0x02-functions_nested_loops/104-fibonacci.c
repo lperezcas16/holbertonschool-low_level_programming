@@ -1,30 +1,31 @@
 #include <stdio.h>
 
 /**
- * natural - Write a program that computes and prints the sum of
- * all the multiples of 3 or 5 below 1024 (excluded)
- * @i: Integer
- * @r: Result
- * Return: On success 1.
+ *main - Fibonacci sequence
  *
+ *Description: Prints the first 98 Fibonacci numbers
+ *Return: 0 upon successful completion
  */
-
 int main(void)
 {
-	int i;
-	float a, b, r;
-	a = 1;
-	b = 2;
-	r= 0;
+	int nthfibonacci = 3;
+	double fibonacci;
+	double nminus2 = 1;
+	double nminus1 = 2;
 
-	printf("1, 2");
-	for(i = 1; i <= 96; i++)
+	printf("%.0f, ", nminus2);
+	printf("%.0f, ", nminus1);
+
+	while (nthfibonacci <= 98)
 	{
-		r = a + b;
-		a = b;
-		b = r;
-		printf(", %.0f",r);
+		fibonacci = nminus2 + nminus1;
+		printf("%.0f", fibonacci);
+		if (nthfibonacci < 98)
+			printf(", ");
+		nminus2 = nminus1;
+		nminus1 = fibonacci;
+		nthfibonacci++;
 	}
-	putchar('\n');
+	printf("\n");
 	return (0);
 }
