@@ -1,31 +1,59 @@
 #include <stdio.h>
 
 /**
- *main - Fibonacci sequence
+ * main - Prints first 98 fibonacci numbers starting 1, 2
  *
- *Description: Prints the first 98 Fibonacci numbers
- *Return: 0 upon successful completion
+ * Return: 0 on success
  */
 int main(void)
 {
-	int nthfibonacci = 3;
-	double fibonacci;
-	double nminus2 = 1;
-	double nminus1 = 2;
+	/* each holds 7 digits*/
+	unsigned long n1, n2, n3;
+	unsigned long m1, m2, m3;
+	unsigned long tmp1, tmp2, tmp3;
+	int i;
 
-	printf("%.0f, ", nminus2);
-	printf("%.0f, ", nminus1);
+	n1 = n2 = m1 = m2 = tmp1 = tmp2 = 0;
+	n3 = 1;
+	m3 = 2;
+	printf("%lu, ", n3);
 
-	while (nthfibonacci <= 98)
+	for (i = 1; i < 98; i++)
 	{
-		fibonacci = nminus2 + nminus1;
-		printf("%.0f", fibonacci);
-		if (nthfibonacci < 98)
+		if (m1 != 0)
+			printf("%lu%07lu%07lu", m1, m2, m3);
+		else if (m2 != 0)
+			printf("%lu%07lu", m2, m3);
+		else
+			printf("%lu", m3);
+
+		if (i != 98 - 1)
 			printf(", ");
-		nminus2 = nminus1;
-		nminus1 = fibonacci;
-		nthfibonacci++;
+		else
+			printf("\n");
+		/* calculate tmp */
+		tmp3 = n3 + m3;
+		if (tmp3 >= 10000000)
+		{
+			tmp2++;
+			tmp3 %= 10000000;
+		}
+		tmp2 = tmp2 + n2 + m2;
+		if (tmp2 / 10000000 != 0)
+		{
+			tmp1++;
+			tmp2 %= 10000000;
+		}
+		/* tmp1 will not go out of bound in this case */
+		tmp1 = tmp1 + n1 + m1;
+
+		n1 = m1;
+		n2 = m2;
+		n3 = m3;
+		m1 = tmp1;
+		m2 = tmp2;
+		m3 = tmp3;
+		tmp1 = tmp2 = tmp3 = 0;
 	}
-	printf("\n");
 	return (0);
 }
