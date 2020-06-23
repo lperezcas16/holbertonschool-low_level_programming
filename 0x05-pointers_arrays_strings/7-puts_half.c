@@ -1,20 +1,25 @@
 #include "holberton.h"
 
 /**
- * puts_half - prints half a string
- * @str: character
+ * puts_half - main function.
+ * @str: Pointer, the string of numbers to print.
+ *
+ * Description: This function prints half of a string.
+ *
+ * Return: none.
  */
+
 void puts_half(char *str)
 {
 	int i;
 
-	for (i = 0; str[i] != '\0'; i++)
+	for (; str[i]; i++)
 	{
-	}
-	i = i + 1;
-	for (i = i / 2; str[i] != '\0'; i++)
-	{
-		_putchar(str[i]);
+		if (i >= 5)
+		{
+			_putchar(str[i]);
+		}
+
 	}
 	_putchar('\n');
 }
