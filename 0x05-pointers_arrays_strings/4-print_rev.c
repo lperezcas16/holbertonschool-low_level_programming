@@ -1,4 +1,4 @@
-iinclude "holberton.h"
+#include "holberton.h"
 
 /**
 *print_rev - Funtion
@@ -8,15 +8,13 @@ iinclude "holberton.h"
 
 void print_rev(char *s)
 {
-	int i;
+	int i = 0;
 
-	i = 0;
+	for (; s[i + 1]; i++)
+	{
+	}
+	for (; s[i]; i--)
+		printf("%c", s[i]);
 
-	while (s[i] != '\0')
-		i++;
-
-	for (i -= 1; i >= 0; i--)
-		_putchar(s[i]);
-
-	_putchar('\n');
+	printf("\n");
 }
