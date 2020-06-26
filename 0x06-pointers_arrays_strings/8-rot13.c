@@ -1,28 +1,26 @@
 #include "holberton.h"
-
 /**
- * rot13 - conver string o rot13
- * @s: string
- * Return: string
+ * rot13 - check the code for Holberton School students.
+ *@n: the variable
+ *Return: n variable
  */
-
-char *rot13(char *s)
+char *rot13(char *n)
 {
-	int i = 0;
+	int c, j;
+	char alp[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char rot[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
-	while (s[i])
+	for (c = 0; n[c] != '\0'; c++)
 	{
-		if ((s[i] >= 'a' && s[i] <= 'm') || (s[i] >= 'A' && s[i] <= 'M'))
+		for (j = 0; alp[j] != '\0'; j++)
 		{
-			s[i] = (s[i] + 13);
-		}
-		else
-			while ((s[i] >= 'n' && s[i] <= 'z') ||
-			      (s[i] >= 'N' && s[i] <= 'Z'))
+			if (n[c] == alp[j])
 			{
-				s[i] = (s[i] - 13);
+				n[c] = rot[j];
+				break;
 			}
-		i++;
+		}
 	}
-	return (s);
+
+	return (n);
 }
