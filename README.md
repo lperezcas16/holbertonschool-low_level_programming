@@ -3,7 +3,7 @@ This project is about basic concept of c :bomb: :bomb:
 
 ## CONTENT: :crystal_ball:
 - :one: [Hello World](https://github.com/lperezcas16/holbertonschool-low_level_programming/tree/master/0x00-hello_world) 
- :two: [Variables: if/else- while](https://github.com/lperezcas16/holbertonschool-low_level_programming/tree/master/0x01-variables_if_else_while)
+- :two: [Variables: if/else- while](https://github.com/lperezcas16/holbertonschool-low_level_programming/tree/master/0x01-variables_if_else_while)
 - :three: [Funtions nested and loops](https://github.com/lperezcas16/holbertonschool-low_level_programming/tree/master/0x02-functions_nested_loops)
 -  :four: [Debugging](https://github.com/lperezcas16/holbertonschool-low_level_programming/tree/master/0x03-debugging)
 - :five: [More Funtions, nested loops](https://github.com/lperezcas16/holbertonschool-low_level_programming/tree/master/0x04-more_functions_nested_loops)
