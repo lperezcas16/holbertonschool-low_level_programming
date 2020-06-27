@@ -1,6 +1,7 @@
 # Low-level programming & Algorithm - Hatching out
-This project is about basic concept of c 
-## CONTENT:
+This project is about basic concept of c :tada: 
+
+## CONTENT: :crystal_ball:
 * [Hello World](https://github.com/lperezcas16/holbertonschool-low_level_programming/tree/master/0x00-hello_world) 
 * [Variables: if/else- while](https://github.com/lperezcas16/holbertonschool-low_level_programming/tree/master/0x01-variables_if_else_while)
 * [Funtions nested and loops](https://github.com/lperezcas16/holbertonschool-low_level_programming/tree/master/0x02-functions_nested_loops)
