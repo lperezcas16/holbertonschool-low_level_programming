@@ -1,9 +1,13 @@
 #include "holberton.h"
 
 /**
- * _memset -
+ * _memset - Funtion
  *
- * Return: 
+ * @s: Pointer
+ * @b: Char variable
+ * @n: unsigned int i
+ *
+ * Return: the pointer
  */
 char *_memset(char *s, char b, unsigned int n)
 {
@@ -11,4 +15,5 @@ char *_memset(char *s, char b, unsigned int n)
 
 	for (; i < n; i++)
 		s[i] = b;
+	return (s);
 }
