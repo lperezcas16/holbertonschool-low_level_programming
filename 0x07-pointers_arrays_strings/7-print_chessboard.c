@@ -4,11 +4,11 @@
  * print_chessboard - Funtion
  * @a: Matrix
  *
- * Return: 
+ * Return: 0
  */
 void print_chessboard(char (*a)[8])
 {
-	int c, f ,g;
+	int c, f, g;
 
 	g = sizeof(a);
 
