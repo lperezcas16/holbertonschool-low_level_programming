@@ -1,9 +1,10 @@
 #include "holberton.h"
 
 /**
- * set_string -
+ * set_string - Funtion
  *
- * Return: 
+ *@s: Double pointer
+ *@to: Simple pointer
  */
 void set_string(char **s, char *to)
 {
