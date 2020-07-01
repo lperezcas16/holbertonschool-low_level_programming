@@ -2,11 +2,11 @@
 
 /**
  * _pow_recursion - Funtion
- * 
- * @y: int
- * @x: int
  *
- * Return: int 
+ *@y: int
+ *@x: int
+ *
+ * Return: int
  */
 int _pow_recursion(int x, int y)
 {
