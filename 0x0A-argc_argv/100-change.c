@@ -19,14 +19,14 @@ int main(int argc, char *argv[])
 	if (argc == 2)
 	{
 		int e = atoi(argv[1]);
-	
+
 		for (i = 0; i < 5; i++)
 		{
 			for (; e - coins[i] >= 0; coins_num++)
-		{
+			{
 				e -= coins[i];
-				}	
-			}	
+			}
+		}
 		printf("%d\n", coins_num);
 	}
 	else
