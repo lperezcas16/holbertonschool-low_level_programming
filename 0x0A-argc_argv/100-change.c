@@ -28,6 +28,9 @@ int main(int argc, char *argv[])
 		printf("%d\n", coins_num);
 	}
 	else
+	{
 		printf("Error\n");
+		return (1);
+	}
 	return (0);
 }
