@@ -13,6 +13,8 @@ char *str_concat(char *s1, char *s2)
 	char *pnt = NULL;
 	int size, size2;
 
+	if (!s1 || !s2)
+		return (NULL);
 	for (size = 1; s1[size - 1]; size++)
 	;
 	for (size2 = 1; s2[size2 - 1]; size2++)
@@ -20,7 +22,7 @@ char *str_concat(char *s1, char *s2)
 	size = size + size2 - 1;
 	pnt = malloc(sizeof(char) * size);
 
-	if (!s1 || !s2)
+	if (!pnt)
 		return (NULL);
 
 	for (size = 0; s1[size]; size++)
