@@ -29,11 +29,8 @@ char *str_concat(char *s1, char *s2)
 		pnt[size] = s1[size];
 
 	for (size2 = 0; s2[size2]; size2++)
-	{
 		pnt[size + size2] = s2[size2];
-	}
+
 	pnt[size + size2] = '\0';
 	return (pnt);
-
-
 }
