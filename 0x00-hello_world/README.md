@@ -42,5 +42,6 @@ What you should learn from this project:
 
 
 ## Author 
-* **Laura Perez** - [lperezcas16] (https://github.com/lperezcas16?tab=repositories) :smiley_cat:
+* **Laura Perez** - [lperezcas16](https://github.com/lperezcas16?tab=repositories) :smiley_cat:
+
 
