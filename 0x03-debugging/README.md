@@ -29,4 +29,4 @@ What you should learn from this project:
 * This program converts a date to the day of year and determines how many days are left in the year, taking leap year into consideration.
 
 ## Author
-* **Laura Perez** - -[lperezcas16](https://github.com/lperezcas16) :smile_cat:
+* **Laura Perez** - [lperezcas16](https://github.com/lperezcas16) :smile_cat:
