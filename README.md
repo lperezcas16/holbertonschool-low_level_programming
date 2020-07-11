@@ -14,7 +14,7 @@ This project is about basic concept of c :bomb: :bomb:
 ### [0x09_Static Libraries](https://github.com/lperezcas16/holbertonschool-low_level_programming/tree/master/0x09-static_libraries)
 ### [0x0A_arg argv](https://github.com/lperezcas16/holbertonschool-low_level_programming/tree/master/0x0A-argc_argv)
 ### [0x0B_Malloc Free](https://github.com/lperezcas16/holbertonschool-low_level_programming/tree/master/0x0B-malloc_free)
-### [0x0C_More malloc amd free](https://github.com/lperezcas16/holbertonschool-low_level_programming/tree/master/0x0C-more_malloc_free)
+### [0x0C_More malloc and free](https://github.com/lperezcas16/holbertonschool-low_level_programming/tree/master/0x0C-more_malloc_free)
 ### Made by [lperezcas16](https://github.com/lperezcas16) :smile_cat:
 
 
