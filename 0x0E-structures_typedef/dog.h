@@ -1,11 +1,15 @@
 #include "dog.h"
 
 /**
- * free_dog -
+ * free_dog - Funtion, Structure
  *
- * Return: 
+ * @d: Object 
+ * Return: Always 0
  */
-void free_dog(dog_t *d)
+struct dog
 {
+	char *name;
+	float age;
+	char *owner
 
-}
+};
