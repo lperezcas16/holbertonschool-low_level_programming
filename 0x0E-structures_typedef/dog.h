@@ -1,15 +1,24 @@
-#include "dog.h"
+#ifndef doggy
+#define doggy
 
 /**
- * free_dog - Funtion, Structure
+ * struct dog -  Structure
  *
- * @d: Object 
- * Return: Always 0
+ * @name: char
+ * @age: age
+ * @owner: owner
+ *
+ * Description: dog is the structure
  */
 struct dog
 {
 	char *name;
 	float age;
-	char *owner
-
+	char *owner;
 };
+typedef struct dog dog_t;
+
+void init_dog(struct dog *d, char *name, float age, char *owner);
+void print_dog(struct dog *d);
+
+#endif
