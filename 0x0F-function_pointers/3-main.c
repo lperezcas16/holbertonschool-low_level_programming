@@ -12,8 +12,7 @@
  */
 int main(int ac, char *ag[])
 {
-	int a;
-	int b;
+	int a, b, (*op)(int, int);
 
 	if (ac != 4)
 	{
@@ -39,8 +38,8 @@ int main(int ac, char *ag[])
 		printf("Error\n");
 		exit(99);
 	}
-
-	printf("%d\n", (get_op_func(ag[2])(a, b)));
+	op = get_op_func(ag[2]);
+	printf("%d\n", op(a, b));
 	return (0);
 
 }
