@@ -27,13 +27,13 @@ int main(int ac, char *ag[])
 		|| ag[2][1] != '\0')
 	{
 		printf("Error\n");
-		exit(100);
+		exit(99);
 	}
 
 	a = atoi(ag[1]);
 	b = atoi(ag[3]);
 
-	if (b == 0 && (ag[2][0] == '/' || ag[2][0]))
+	if (b == 0 && (ag[2][0] == '/' || ag[2][0] == '%'))
 	{
 		printf("Error\n");
 		exit(99);
