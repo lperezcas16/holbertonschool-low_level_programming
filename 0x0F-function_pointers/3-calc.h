@@ -1,5 +1,5 @@
-#ifndef TASK3_H
-#define TASK3_H
+#ifndef TASK3
+#define TASK3
 /**
  * struct op - Struct op
  *
