@@ -12,7 +12,7 @@
  */
 int main(int ac, char *ag[])
 {
-	int a, b, (*operate)aint, int);
+	int a, b, (*operate)(int, int);
 
 	if (ac != 4)
 	{
