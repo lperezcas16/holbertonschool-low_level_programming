@@ -12,7 +12,7 @@
  */
 int main(int ac, char *ag[])
 {
-	int a, b, (*op)(int, int);
+	int a, b, (*operate)aint, int);
 
 	if (ac != 4)
 	{
@@ -37,8 +37,8 @@ int main(int ac, char *ag[])
 	}
 	a = atoi(ag[1]);
 	b = atoi(ag[3]);
-	op = get_op_func(ag[2]);
-	printf("%d\n", op(a, b));
+	operate = get_op_func(ag[2]);
+	printf("%d\n", operate(a, b));
 	return (0);
 
 }
