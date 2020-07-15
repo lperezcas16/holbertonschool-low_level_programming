@@ -27,7 +27,7 @@ int main(int ac, char *ag[])
 		|| ag[2][1] != '\0')
 	{
 		printf("Error\n");
-		exit(99);
+		exit(100);
 	}
 
 	a = atoi(ag[1]);
