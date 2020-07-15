@@ -1,5 +1,5 @@
-#ifndef calculadora_header
-#define calculadora_header
+#ifndef Calc_taks
+#define calc_task
 /**
  * struct op - Struct op
  *

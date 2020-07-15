@@ -30,14 +30,13 @@ int main(int ac, char *ag[])
 		exit(99);
 	}
 
-	a = atoi(ag[1]);
-	b = atoi(ag[3]);
-
-	if (b == 0 && (ag[2][0] == '/' || ag[2][0] == '%'))
+	if ((*ag[2] == '/' || *ag[2] == '%') && (ag[3] == 0))
 	{
 		printf("Error\n");
-		exit(99);
+		exit(100);
 	}
+	a = atoi(ag[1]);
+	b = atoi(ag[3]);
 	op = get_op_func(ag[2]);
 	printf("%d\n", op(a, b));
 	return (0);
