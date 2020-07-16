@@ -37,7 +37,6 @@ int main(int ac, char *ag[])
 		printf("Error\n");
 		exit(100);
 	}
-	
 	operate = get_op_func(ag[2]);
 	printf("%d\n", operate(num1, num2));
 	return (0);
