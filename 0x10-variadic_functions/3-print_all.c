@@ -31,7 +31,7 @@ void print_f(va_list list)
  * @list: arguments
  * Return: void
  */
-void print_str(va_list list)
+void print_s(va_list list)
 {
 	char *str = va_arg(list, char *);
 
@@ -58,9 +58,8 @@ void print_all(const char * const format, ...)
 	    {'c', print_c},
 	    {'i', print_d},
 	    {'f', print_f},
-	    {'s', print_str}
+	    {'s', print_s}
 	};
-
 	va_start(list, format);
 	while (format && format[i])
 	{
