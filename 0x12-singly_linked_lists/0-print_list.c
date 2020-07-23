@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * print_list - Funtion 
+ * print_list - Funtion
  * @h: list
  *
  * Return: size_t
