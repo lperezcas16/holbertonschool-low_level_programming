@@ -3,7 +3,7 @@
 /**
  * add_node_end - Function
  * @head: first nodo
- * @str: String 
+ * @str: String
  *
  * Return: list_t
  */
@@ -15,7 +15,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	for (i = 0; str[i]; i++)
 	;
 
-	if(new_nodo)
+	if (new_nodo)
 	{
 
 		new_nodo->str = strdup(str);
