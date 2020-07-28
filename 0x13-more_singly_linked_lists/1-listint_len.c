@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * listint_len - Fh: unction return len
+ * listint_len - Function return len
  * @h: pointer
  *
  * Return: size_t leng of the list
