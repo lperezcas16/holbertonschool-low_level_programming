@@ -2,9 +2,10 @@
 
 /**
  * free_listint2 - Funtions that free a list head = NULL
+ *
  * @head: pointer
  *
- * Return: noting 
+ *Return: nothing
  */
 void free_listint2(listint_t **head)
 {
