@@ -17,5 +17,5 @@ listint_t *tmp;
 		*head = (*head)->next;
 		free(tmp);
 	}
-	// *head = NULL;
+	*head = NULL;
 }
