@@ -1,9 +1,9 @@
 #include "holberton.h"
 
 /**
-*reset_to_98 - Funtion
+*reset_to_98 - Funtion that asigne a value to a pointer
 *
-*@n: Variable
+*@n: pointer integer
 */
 
 void reset_to_98(int *n)

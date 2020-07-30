@@ -1,9 +1,9 @@
 #include "holberton.h"
 
 /**
-*_puts - Funtion
+*_puts - Funtion that print charaters in the String
 *
-*@str: Variable
+*@str: the string
 */
 
 void _puts(char *str)

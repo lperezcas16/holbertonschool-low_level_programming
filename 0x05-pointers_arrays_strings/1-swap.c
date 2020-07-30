@@ -1,10 +1,10 @@
 #include "holberton.h"
 
 /**
-*swap_int - Funtion
+*swap_int - Funtion that swap the value into 2 pointers
 *
-*@a: Variable Integer 1
-*@b: Variable Integer 2
+*@a: pointer Integer 1
+*@b: pointer Integer 2
 */
 
 void swap_int(int *a, int *b)
