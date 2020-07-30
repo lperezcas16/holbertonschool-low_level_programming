@@ -9,7 +9,7 @@
 unsigned int binary_to_uint(const char *b)
 {
 	int result = 0, count = 0, pow = 1;
-	
+
 	if (!b)
 		return (0);
 
@@ -25,6 +25,6 @@ unsigned int binary_to_uint(const char *b)
 		pow *= 2;
 		count--;
 	}
-	return (result);;
+	return (result);
 }
 
