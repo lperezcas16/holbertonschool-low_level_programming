@@ -25,7 +25,6 @@ unsigned int binary_to_uint(const char *b)
 		pow *= 2;
 		count--;
 	}
-
 	return (result);;
 }
 
