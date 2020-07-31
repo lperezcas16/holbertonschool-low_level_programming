@@ -1,9 +1,11 @@
 #include "holberton.h"
 
 /**
- * clear_bit -
+ * clear_bit - Funtion that clear the bits
+ * @n: long int
+ * @index: index of bitwise
  *
- * Return: 
+ * Return: integer
  */
 int clear_bit(unsigned long int *n, unsigned int index)
 {

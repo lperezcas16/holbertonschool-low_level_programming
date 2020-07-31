@@ -12,12 +12,11 @@ void decimal_binary(unsigned long int n)
 	decimal_binary(n >> 1);
 	n = n & 1;
 	_putchar(n + 48);
-	//0001 = 1
 }
 
 /**
  * print_binary - Function convert into binary
- * @n: number to convert 
+ * @n: number to convert
  */
 void print_binary(unsigned long int n)
 {
@@ -25,5 +24,4 @@ void print_binary(unsigned long int n)
 		_putchar('0');
 	else
 		decimal_binary(n);
-	
 }
