@@ -2,9 +2,9 @@
 #include <stdint.h>
 
 /**
- * get_endianness -
+ * get_endianness - Funtins that search the endian
  *
- * Return: 
+ * Return: integer
  */
 int get_endianness(void)
 {
@@ -13,5 +13,5 @@ int get_endianness(void)
 
 	endian = (char *)&i;
 
-	return (*endian);;
+	return (*endian);
 }
