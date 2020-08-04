@@ -1,37 +1,26 @@
 #include "holberton.h"
+
 /**
- * create_file - This funtion creates a new file.
- * @filename: Name of the nre file.
- * @text_content: Number of letters.
+ * create_file -Function creates a file
+ * @filename: file to create
+ * @text_content: the content of filename
  *
- * Return: The number of letters.
- **/
+ * Return: Integer
+ */
 int create_file(const char *filename, char *text_content)
 {
-	int file;
-	int bytes = 0;
-	int write_t;
+	int new_open, new_write, size = 0;
 
-	if (filename == NULL) /*Verification of filename */
+	if (filename == NULL)
 		return (-1);
+	if (text_content != NULL)
+		while (text_content[size])
+			size++;
+	new_open = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
+	new_write = write(new_open, text_content, size);
 
-	file = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600); /*Create file */
-	if (file == -1)
+	if (new_open == -1 || new_write == -1)
 		return (-1);
-
-	if (text_content == NULL) /*Verification of text_content*/
-	{
-		close(file);
-		return (-1);
-	}
-
-	while (text_content[bytes])
-		bytes++;
-
-
-	write_t = write(file, text_content, bytes);  /*writing inside the new file */
-	if (write_t == -1 || file == -1)
-		return (-1);
-	close(file);
+	close(new_open);
 	return (1);
 }
