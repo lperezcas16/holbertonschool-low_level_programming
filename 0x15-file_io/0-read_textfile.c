@@ -11,23 +11,16 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int new_read, new_write, new_open;
-	char *file;
+	char *file = malloc(sizeof(char) * letters);
 
-	file = malloc(sizeof(char) * letters);
-	if (filename == NULL || file == NULL)
+	if (!filename || !file)
 		return (0);
 	new_open = open(filename, O_RDONLY);
 	new_read = read(new_open, file, letters);
 	new_write = write(STDOUT_FILENO, file, new_read);
 
-	if (new_read == -1 ||
-		new_open == -1 ||
-			new_write == -1 ||
-				new_write != new_read)
-	{
+	if (new_open == -1)
 		return (free(file), 0);
-
-	}
 	free(file);
 	close(new_open);
 	return (new_write);
