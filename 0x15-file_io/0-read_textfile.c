@@ -19,11 +19,9 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	new_read = read(new_open, file, letters);
 	new_write = write(STDOUT_FILENO, file, new_read);
 
-	if (new_open == -1 || new_write == -1 ||
-		new_read == -1)
-	{
+	if (new_open == -1 || new_write == -1 || new_read == -1)
 		return (free(file), 0);
-	}
+	
 	free(file);
 	close(new_open);
 	return (new_write);
