@@ -10,7 +10,7 @@ int create_file(const char *filename, char *text_content)
 {
 	int file;
 	int bytes = 0;
-	ssize_t write_t;
+	int write_t;
 
 	if (filename == NULL) /*Verification of filename */
 		return (-1);
@@ -19,7 +19,7 @@ int create_file(const char *filename, char *text_content)
 	if (file == -1)
 		return (-1);
 
-	while (*(text_content + bytes) != '\0')
+	while (*(text_content + bytes))
 		bytes++;
 
 	write_t = write(file, text_content, bytes);  /*writing inside the new file */
