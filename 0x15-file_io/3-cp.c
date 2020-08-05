@@ -9,8 +9,8 @@
 int main(int ac, char **av)
 {
 	int new_open, new_open2, new_write, new_read = 1, new_close;
-	char *buffer[2048];
-	size_t size = 2048;
+	char *buffer[2050];
+	size_t size = 2050;
 
 	if (ac != 3)
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n"), exit(97);
