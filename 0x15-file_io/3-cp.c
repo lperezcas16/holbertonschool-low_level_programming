@@ -29,7 +29,7 @@ int main(int ac, char **av)
 		if (new_read > 0)
 			if (new_write == -1)
 				dprintf(STDERR_FILENO, "Error: Can't write to %s\n", av[2]), exit(99);
-	}	
+	}
 	new_read = close(new_open);
 	new_close = close(new_open2);
 	if (new_read == -1)
