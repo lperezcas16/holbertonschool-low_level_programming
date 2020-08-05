@@ -9,7 +9,7 @@
 int main(int ac, char **av)
 {
 	int new_open, new_open2, new_write, new_read = 1, new_close;
-	char *buffer = malloc(sizeof(char) * 1024);
+	char *buffer = malloc(sizeof(char) * 2048);
 
 	if (buffer == NULL)
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", av[2]), exit(99);
@@ -30,8 +30,7 @@ int main(int ac, char **av)
 		if (new_read > 0)
 			if (new_write == -1)
 				dprintf(STDERR_FILENO, "Error: Can't write to %s\n", av[2]), exit(99);
-	}
-	
+	}	
 	new_read = close(new_open);
 	new_close = close(new_open2);
 	if (new_read == -1)
