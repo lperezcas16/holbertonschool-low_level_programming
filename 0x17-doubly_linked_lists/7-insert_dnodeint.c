@@ -5,7 +5,6 @@
  * @h: header
  * @idx: index
  * @n: valueo date
- *
  * Return: dlistint_t
  */
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
@@ -34,6 +33,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		if (!tmp->next && idx == i + 1)
 			return (free(new), add_dnodeint(h, n));
 		tmp = tmp->next;
+		i++;
 	}
 	free(new);
 	return (NULL);
