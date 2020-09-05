@@ -8,21 +8,23 @@
  */
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
-	dlistint_t *tmp = malloc(sizeof(dlistint_t));
-
-	if (!tmp)
+	/* 1. Allocate node*/
+	dlistint_t *new = malloc(sizeof(dlistint_t));
+	/*2. verify space*/
+	if (!new)
 		return (NULL);
+	/* 3. values for the new node*/
+	new->n = n;
+	/*4. makes previous as NULL*/
+	new->prev = NULL;
 
-	tmp->n = n;
-	tmp->prev = NULL;
-
-	if (!*head)
-		tmp->next = NULL, *head = tmp;
+	if (*head)
+		/*5.  asign the node at the init and the prev is the new node */
+		new->next = (*head), (*head)->prev = new,
+		*head = new;
 	else
-	{
-		tmp->next = *head;
-		(*head)->prev = tmp;
-		*head = tmp;
-	}
-	return (tmp);
+		/* if there is no more nodes*/
+		*head = new, new->next = NULL;
+
+	return (new);
 }
