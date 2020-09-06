@@ -35,7 +35,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 			aux->next = new;
 		} /* 8. if we are in the last node add node */
 		else if (i == idx - 1 && aux->next == NULL)
-			return (add_dnodeint_en(h, n));
+			return (add_dnodeint_end(h, n));
 		aux = aux->next, i++; /* 9.travel in the list */
 	}
 	if (idx > i)
