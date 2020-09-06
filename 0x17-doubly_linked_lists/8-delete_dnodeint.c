@@ -14,8 +14,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	/* 1. check the input */
 	if (*head == NULL || head == NULL)
 		return (-1);
-	/* 2. assigne aux the same value of head*/
-	aux = *head;
+	aux = *head; /* 2. assigne aux the same value of head*/
 	/*3. If there is a mistake with the input  free the list*/
 	if (index == 0 && (*head)->next == NULL)
 		return (free(*head), *head = NULL, 1);
@@ -23,8 +22,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	{						   /* pointer next of head */
 		(*head) = (*head)->next;		   /* is diferent to null (EDGE CASE)*/
 		free((*head)->prev), (*head)->prev = NULL; /*5.delete the node in position */
-
-		return (1); /* Return 1 to successful */
+		return (1);				   /* Return 1 to successful */
 	}
 	while (aux)
 	{
