@@ -17,7 +17,6 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	/* 2. assigne aux the same value of head*/
 	aux = *head;
 	/*3. If there is a mistake with the input  free the list*/
-	/*next node to head is equals to NULL and return 1 (EDGE CASE)*/
 	if (index == 0 && (*head)->next == NULL)
 		return (free(*head), *head = NULL, 1);
 	else if (index == 0 && (*head)->next != NULL)	   /*4. if the index is 0*/
