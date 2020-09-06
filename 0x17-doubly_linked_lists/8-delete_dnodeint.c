@@ -42,10 +42,9 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 			aux->next = NULL;
 			return (1);
 		}
-		aux = aux->next;
-		i++;
+		aux = aux->next, i++;
 	}
 	if (index > i)
-		return (-1);
+		return (-1); /* return -1 process failes */
 	return (-1);
 }
