@@ -22,13 +22,13 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	{						   /* pointer next of head */
 		(*head) = (*head)->next;		   /* is diferent to null (EDGE CASE)*/
 		free((*head)->prev), (*head)->prev = NULL; /*5.delete the node in position */
-		return (1);				   /* Return 1 to successful */
+		return (1);				   /* Return 1 to succeeded */
 	}
 	while (aux)
 	{
 		if (i == index - 1 && aux->next != NULL)
 		{
-			aux->next = aux->next->next;
+			aux->next = aux->next->next; /*6. change the pointer to next*/
 			free(aux->next->prev);
 			aux->next->prev = aux;
 			return (1);
